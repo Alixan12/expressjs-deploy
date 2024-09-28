@@ -5,3 +5,9 @@
     to = "/.netlify/functions/api/:splat"
     from = "/*"
     status = 200
+
+# index.html uchun asosiy yo'lni belgilash
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
