@@ -3,8 +3,10 @@ import serverless from "serverless-http"
 
 const app = express();
 
-app.get("/" , (req,res) => {
-    res.send('S!')
+const path = require('path');
+
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, '/disk/index.html'));
 });
 
 app.get('/abaut', (req,res) => {
