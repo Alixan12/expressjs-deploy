@@ -6,7 +6,7 @@ const app = express();
 
 // Asosiy yo'l
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, '../disk/index.html')); // To'g'ri yo'lni ko'rsating
+    res.sendFile(path.join(__dirname, '/disk/index.html')); // Disk papkasidagi index.html
 });
 
 // 'abaut' yo'li
