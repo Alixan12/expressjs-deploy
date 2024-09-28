@@ -4,7 +4,7 @@ import serverless from "serverless-http"
 const app = express();
 
 app.get("/" , (req,res) => {
-    res.send('Serverdan salom!')
+    res.send('S!')
 });
 
 app.get('/abaut', (req,res) => {
