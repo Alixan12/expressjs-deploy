@@ -1,20 +1,22 @@
 import express from "express";
-import serverless from "serverless-http"
+import serverless from "serverless-http";
+import path from 'path';
 
 const app = express();
 
-const path = require('path');
-
+// Asosiy yo'l
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, '/disk/index.html'));
+    res.sendFile(path.join(__dirname, 'disk', 'index.html')); // To'g'ri yo'lni ko'rsating
 });
 
-app.get('/abaut', (req,res) => {
+// 'abaut' yo'li
+app.get('/abaut', (req, res) => {
     res.json({
-        name : 'Alisher',
-        surname : 'Qurbonov',
-        age : 21
+        name: 'Alisher',
+        surname: 'Qurbonov',
+        age: 21
     });
 });
 
-export const handler = serverless(app); 
+// Serverless funktsiya
+export const handler = serverless(app);
