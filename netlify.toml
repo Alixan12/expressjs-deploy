@@ -9,5 +9,5 @@
 # index.html uchun asosiy yo'lni belgilash
 [[redirects]]
     from = "/*"
-    to = "/index.html"
+    to = "./disk/index.html"
     status = 200
