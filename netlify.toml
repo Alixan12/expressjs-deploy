@@ -6,8 +6,11 @@
     from = "/*"
     status = 200
 
-# index.html uchun asosiy yo'lni belgilash
+[build]
+  publish = "disk" # Bu joyda sizning chiqish papkangiz
+  command = "npm run build" # Agar kerak bo'lsa
+
 [[redirects]]
-    from = "/*"
-    to = "./disk/index.html"
-    status = 200
+  from = "/*"
+  to = "/index.html"
+  status = 200
