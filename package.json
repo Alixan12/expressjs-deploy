@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "your-build-command-here",
-    "start": "your-start-command-here"
+     "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "react-scripts build",
+     "build": "your-actual-build-command",
+     "start": "react-scripts start"
   },
   "keywords": [],
   "author": "",
