@@ -1,0 +1,14 @@
+[build]
+  functions = "functions"
+  publish = "disk" # Bu joyda sizning chiqish papkangiz
+  command = "npm run build" # Agar kerak bo'lsa
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
